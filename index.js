@@ -8,6 +8,9 @@ const fs = require('fs');
 fs.readFile('./README.md',function(err,data){
     console.log(data.toString().match(regex));
 });
+
+//crear funcion md-limks
+
 /*console.log("Donde esta el archivo");
 var stdin = process.openStdin();//captura lo que usuario escribe
 
