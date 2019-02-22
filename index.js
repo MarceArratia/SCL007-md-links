@@ -16,3 +16,4 @@ stdin.addListener("data", function(d) {//agrego funcion para mostrar lo que usua
     console.log("Tu archivo esta en: " + 
         stdin.toString().trim());
   });*/
+//probando
