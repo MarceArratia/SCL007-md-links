@@ -6,6 +6,7 @@ Pequeña librería que lee y analiza archivos de tipo Markdown(.md), para verifi
 
 La idea de esta librería es leer del sistema de archivos, recibir argumentos a través de la línea de comando, analizar texto, hacer consultas HTTP.
 
+![md-links](filtro.jpeg)
 
 Antes de todo: 
 Para el correcto funcionamiento de este proyecto necesitas tener instalado Node.js en tu computador. Para las pruebas unitarias se utilizó Jest por su simpleza.
