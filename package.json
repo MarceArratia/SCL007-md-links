@@ -12,7 +12,10 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-plugin-react": "^7.12.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
