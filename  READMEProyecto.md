@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Pequeña librería que analiza archivos de tipo Markdown(.md), que verifica links que esten dentro de esos archivos y entregar algunas estadísticas.
+Pequeña librería que lee y analiza archivos de tipo Markdown(.md), para verifica links que esten dentro de esos archivos y entrega algunas estadísticas.
 
 La idea de esta librería es leer del sistema de archivos, recibir argumentos a través de la línea de comando, analizar texto, hacer consultas HTTP.
 

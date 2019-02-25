@@ -7,3 +7,18 @@ fs.readdir(testFolder, ( err,files) => {
         console.log(file);   
   });
 });
+
+let promesa = new Promise((resolve,reject)=>{
+if(true){
+    resolve('La operación fue un éxito');
+}else{
+    reject('Ocurrio un error');
+}
+});
+ promesa
+ .then((response)=>{
+console.log('Response',response);
+ })
+ .catch((error)=>{
+    console.log('Error',error); 
+ });
