@@ -1,15 +1,24 @@
 /*module.exports = () => {
    ...
 };*/
-
-//crear funcion md-limks
-
+//#!/usr/bin/env node
+//crear funcion md-links 
+const md=require('./mdlink.js');
 console.log("Donde esta el archivo");
-var stdin = process.openStdin();//captura lo que usuario escribe
-
-
-stdin.addListener("data", function(d) {//agrego funcion para mostrar lo que usuario escribe
-    console.log("Tu archivo esta en: " + 
-        stdin.toString().trim());
-  });
+var readline = require('readline');
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+  terminal: false
+});
+//captura el teclado hasta enter
+rl.on('line', function(line){
+  let arrayCapture=[];
+  arrayCapture=line.split('--')
+    let path=arrayCapture[0];
+    let option=arrayCapture[1];
+   md(path,option);
+    rl.close();
+})
+        
 //probando

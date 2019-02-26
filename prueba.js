@@ -1,4 +1,4 @@
-const testFolder = '/Users/miguel/Desktop/Trabajos Marce/Prueba/';
+/*const testFolder = '/Users/miguel/Desktop/Trabajos Marce/Prueba/';
 const fs = require('fs');
 
 fs.readdir(testFolder, ( err,files) => {
@@ -22,3 +22,16 @@ console.log('Response',response);
  .catch((error)=>{
     console.log('Error',error); 
  });
+*/
+
+var readline = require('readline');
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+  terminal: false
+});
+
+rl.on('line', function(line){
+    console.log(line);
+    rl.close();
+})
