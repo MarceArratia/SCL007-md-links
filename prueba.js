@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 /*const testFolder = '/Users/miguel/Desktop/Trabajos Marce/Prueba/';
 const fs = require('fs');
->>>>>>> f70b1cbf5793394ccf71f1be8dbe7d5f3172fd30
 
 /*const testFolder = '/Users/miguel/Desktop/Trabajos Marce/Prueba/';
 const fs = require('fs');
@@ -28,13 +25,8 @@ console.log('Response',response);
  });
 */
 
-<<<<<<< HEAD
-let readline = require('readline');
-let rl = readline.createInterface({
-=======
 var readline = require('readline');
 var rl = readline.createInterface({
->>>>>>> f70b1cbf5793394ccf71f1be8dbe7d5f3172fd30
   input: process.stdin,
   output: process.stdout,
   terminal: false
