@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+/*const testFolder = '/Users/miguel/Desktop/Trabajos Marce/Prueba/';
+const fs = require('fs');
+
+>>>>>>> f6728fad245dd2aa71941f0c3aaf3d53d4b9e136
 /*const testFolder = '/Users/miguel/Desktop/Trabajos Marce/Prueba/';
 const fs = require('fs');
 fs.readdir(testFolder, ( err,files) => {
