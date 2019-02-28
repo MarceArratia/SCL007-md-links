@@ -1,6 +1,5 @@
 /*const testFolder = '/Users/miguel/Desktop/Trabajos Marce/Prueba/';
 const fs = require('fs');
-
 /*const testFolder = '/Users/miguel/Desktop/Trabajos Marce/Prueba/';
 const fs = require('fs');
 fs.readdir(testFolder, ( err,files) => {
