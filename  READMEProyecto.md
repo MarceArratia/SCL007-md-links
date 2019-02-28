@@ -11,20 +11,30 @@ La idea de esta librería es leer del sistema de archivos, recibir argumentos a 
 Antes de todo: 
 Para el correcto funcionamiento de este proyecto necesitas tener instalado Node.js en tu computador. Para las pruebas unitarias se utilizó Jest por su simpleza.
 
-Módulos necesarios
-Path
-File System
-Node-fetch
+## Para poder ejecutarlo
 
-## Instalación
+Para poder ejetutar esta libreria, debes instalar en tu proyecto las siguientes dependecias de antemano:
 
+Marked con el comando:
 
+ $npm install --save marked
+
+node-fetch con el comando:
+
+ $npm install node-fetch --save
+
+ ## Guía de uso e instalación
 
 ## Documentación Técnica de Librería
 
+- [Módulos Node.js](https://docs.npmjs.com/creating-a-package-json-file)
+- [Node.js file system - Documentación oficial](https://nodejs.org/api/fs.html)
+- [Node.js http.get - Documentación oficial](https://nodejs.org/api/
+
+El proyecto se subió a Github y se puede encontrar dando clik en el siguiente link
 
 
-### Guía de uso e instalación
+### 
 
 
 ### JavaScript API
