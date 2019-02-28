@@ -57,9 +57,16 @@ Node-fetch
 
 
 
-### Tutoriales / NodeSchool workshoppers
+### Tutoriales 
 
-- [learnyounode](https://github.com/workshopper/learnyounode)
+- [Promesa](https://stackoverflow.com/questions/38235715/fetch-reject-promise-and-catch-the-error-if-status-is-not-ok)
+
+
+
+
+
+
+
 - [how-to-npm](https://github.com/workshopper/how-to-npm)
 - [promise-it-wont-hurt](https://github.com/stevekane/promise-it-wont-hurt)
 

@@ -1,10 +1,11 @@
 const fs = require('fs');
 const fetch = require("node-fetch");
+
 //UrlCheck donde esta url que queremos revisar y option que opcion quiere verificar
 function checkUrl(urlCheck,option,name){
   let statsOK=0;
   let statsBad=0;
-  //urla es arreglo de urls
+  //urls es arreglo de urls
   urls=String(urlCheck).split(',');  
   //async lo que hace esperar que termine la promesa(asincrona)
   async function fetchAll() {//await espera que se resuelva la promesa 
@@ -40,9 +41,9 @@ function checkUrl(urlCheck,option,name){
       console.log(results);//results arreglo que muestra nombre,url y estado
     }
   }
-  fetchAll();
+  fetchAll();//llama a la funcion para manejar promesa
 }
-//buscando archivo md,path almacena la ruta que ingresa el usuario
+//buscando ruta relativa y absoluta,path almacena la ruta que ingresa el usuario
 const mdlink = function urlFilter(path,option){
     //testFolder guarda la ruta de la carpeta o el archivo ,trim quita espacios antes o despuès de la url 
     const testFolder =String(path).trim();//'/Users/miguel/Desktop/Trabajos Marce/Prueba/readme.md';
@@ -87,3 +88,4 @@ const mdlink = function urlFilter(path,option){
       }
 }
 module.exports=mdlink;
+//module.exports=globalUrl;
