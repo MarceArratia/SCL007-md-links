@@ -25,7 +25,7 @@ console.log('Response',response);
  });
 */
 
-var readline = require('readline');
+/*var readline = require('readline');
 var rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -35,4 +35,40 @@ var rl = readline.createInterface({
 rl.on('line', function(line){
     console.log(line);
     rl.close();
-})
+})*/
+const fetch = require("node-fetch");
+const urls = [
+  "https://jsonplaceholder.typicode.com/comments/1",
+  "https://jsonplaceholder.typicode.com/comments/2",
+  "https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Utilizando_Fetch",
+  "https://gf.cl"
+]
+let b=0;
+let m=0;
+async function fetchAll() {
+  const results = await Promise.all(urls.map((url) => 
+  fetch(url).catch(function(err){
+ return err; 
+  }).then(function(r){
+    //console.log(r.url);
+    if(r.status===200){
+      return r.url+" ok";
+    }
+    else{
+      return r.message+" malo";
+    }
+  })));
+for(let i=0;i<results.length;i++){
+  if(String(results[i]).indexOf("failed,") !== -1){
+    console.log(results[i]);
+    m++;
+  }
+  else{
+    b++
+  }
+}
+console.log("Existen "+b+" link buenos");
+console.log("Existen "+m+" link malos");
+
+}
+fetchAll();
