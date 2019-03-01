@@ -5,7 +5,7 @@
 //crear funcion md-links 
 const mdlink=require('./mdlink.js');
 console.log("Donde esta el archivo");
-var readline = require('readline');
+var  readline = require('readline');
 var rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
