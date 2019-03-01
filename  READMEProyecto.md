@@ -6,35 +6,78 @@ Pequeña librería que lee y analiza archivos de tipo Markdown(.md), para verifi
 
 La idea de esta librería es leer del sistema de archivos, recibir argumentos a través de la línea de comando, analizar texto, hacer consultas HTTP.
 
+##Características
+
+Lee solo archivos con la extensión .md
+Extrae y lista todos los links que contenga el archivo
+Agregando la opción --validate valida estado actual de los links encontrados
+Agregando la opción --stats la salida será un texto con estadísticas básicas sobre los links.
+
 ![md-links](filtro.jpeg)
 
 Antes de todo: 
 Para el correcto funcionamiento de este proyecto necesitas tener instalado Node.js en tu computador. Para las pruebas unitarias se utilizó Jest por su simpleza.
 
+
+ ## Pre-requisitos
+
+Para comenzar debes tener instalado Node.js en tu computador.
+
+[Instalando Node.js](https://nodejs.org/es/download/package-manager/#arch-linux)
+
 ## Para poder ejecutarlo
 
-Para poder ejetutar esta libreria, debes instalar en tu proyecto las siguientes dependecias de antemano:
+Para poder ejetutar esta librería, debes instalar en tu proyecto las siguientes dependecias de antemano:
 
-Marked con el comando:
+File system con el comando:
 
- $npm install --save marked
+ $npm install file-system --save
 
-node-fetch con el comando:
+Node-fetch con el comando:
 
  $npm install node-fetch --save
 
  ## Guía de uso e instalación
 
+
+Instala la librería con el siguiente comando con la terminal situada en el directorio de tu proyecto
+
+$npm install index.js
+
+Para analizar un directorio que contenga archivos .md, ejecuta el siguiente comando:
+
+$node index.js <ruta_directorio>
+
+Para analizar un archivo específico .md, ejecuta el siguiente comando:
+
+$node index.js <ruta_archivo>
+
+En ambos casos, si deseas validar funcionalidad de los links contenidos en los archivos .md, sólo debes agregar un espacio, seguido del comando "--validate". El siguiente ejemplo muestra como se efecturía la operación, situándonos en la carpeta contenedora del archivo "ejemplo_archivo_md1.md". Si estás afuera del nivel de tu archivo a analizar, simplemente entrega la ruta relativa a tu ubicación actual.
+
+$node index.js ejemplo_archivo_md1.md --validate
+
+
+
 ## Documentación Técnica de Librería
 
 - [Módulos Node.js](https://docs.npmjs.com/creating-a-package-json-file)
 - [Node.js file system - Documentación oficial](https://nodejs.org/api/fs.html)
-- [Node.js http.get - Documentación oficial](https://nodejs.org/api/
+- [Node.js-Documentación oficial](https://nodejs.org/api/)
 
-El proyecto se subió a Github y se puede encontrar dando clik en el siguiente link
+- [Publicar packpage](https://docs.npmjs.com/getting-started/publishing-npm-packages)
+
+- [Path](https://nodejs.org/api/path.html)
+
+- [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
+
+- [Publicar packpage](https://docs.npmjs.com/getting-started/publishing-npm-packages)
+
+- [Linea de comando CLI](https://medium.com/netscape/a-guide-to-create-a-nodejs-command-line-package-c2166ad0452e)
 
 
-### 
+El proyecto se subió a Github y se puede encontrar dando clik en el siguiente [link](https://github.com/MarceArratia/SCL007-md-links)
+
+
 
 
 ### JavaScript API
@@ -55,30 +98,12 @@ El proyecto se subió a Github y se puede encontrar dando clik en el siguiente l
 ### CLI (Command Line Interface - Interfaz de Línea de Comando)
 
 
-## Pistas / Tips
+## Planificación
 
-### FAQs
-
-#### ¿Cómo hago para que mi módulo sea _instalable_ desde GitHub?
-
-
-### Sugerencias de implementación
+Puede revisar la Organización en el siguiente link [Planificación.](https://github.com/MarceArratia/SCL007-md-links/issues)
 
 
 
-
-### Tutoriales 
-
-- [Promesa](https://stackoverflow.com/questions/38235715/fetch-reject-promise-and-catch-the-error-if-status-is-not-ok)
-
-
-
-
-
-
-
-- [how-to-npm](https://github.com/workshopper/how-to-npm)
-- [promise-it-wont-hurt](https://github.com/stevekane/promise-it-wont-hurt)
 
 ### Otros recursos
 
@@ -91,15 +116,7 @@ El proyecto se subió a Github y se puede encontrar dando clik en el siguiente l
 - [¿Qué es Nodejs? Javascript en el Servidor - Fazt en YouTube](https://www.youtube.com/watch?v=WgSc1nv_4Gw)
 - [¿Simplemente qué es Node.js? - IBM Developer Works, 2011](https://www.ibm.com/developerworks/ssa/opensource/library/os-nodejs/index.html)
 - [Node.js y npm](https://www.genbeta.com/desarrollo/node-js-y-npm)
-- [Módulos, librerías, paquetes, frameworks... ¿cuál es la diferencia?](http://community.laboratoria.la/t/modulos-librerias-paquetes-frameworks-cual-es-la-diferencia/175)
-- [Asíncronía en js](https://carlosazaustre.com/manejando-la-asincronia-en-javascript/)
-- [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
-- [Publicar packpage](https://docs.npmjs.com/getting-started/publishing-npm-packages)
-- [Crear módulos en Node.js](https://docs.npmjs.com/getting-started/publishing-npm-packages)
-- [Leer un archivo](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback)
-- [Leer un directorio](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
-- [Path](https://nodejs.org/api/path.html)
-- [Linea de comando CLI](https://medium.com/netscape/a-guide-to-create-a-nodejs-command-line-package-c2166ad0452e)
+
 
 ## Checklist
 
@@ -107,18 +124,6 @@ El proyecto se subió a Github y se puede encontrar dando clik en el siguiente l
 
 - [ ] Puede instalarse via `npm install --global <github-user>/md-links`
 
-### `README.md`
-
-- [ ] Un board con el backlog para la implementación de la librería.
-- [ ] Documentación técnica de la librería.
-- [ ] Guía de uso e instalación de la librería
-
-### API `mdLinks(path, opts)`
-
-- [ ] El módulo exporta una función con la interfaz (API) esperada.
-- [ ] Implementa soporte para archivo individual
-- [ ] Implementa soporte para directorios
-- [ ] Implementa `options.validate`
 
 ### CLI
 
@@ -129,6 +134,4 @@ El proyecto se subió a Github y se puede encontrar dando clik en el siguiente l
 
 ### Pruebas / tests
 
-- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions,
-  lines, y branches.
-- [ ] Pasa tests (y linters) (`npm test`).
+

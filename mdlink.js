@@ -1,5 +1,6 @@
 const fs = require('fs');
 const fetch = require("node-fetch");
+const colors = require('colors');
 
 //UrlCheck donde esta url que queremos revisar y option que opcion quiere verificar
 function checkUrl(urlCheck,option,name){
