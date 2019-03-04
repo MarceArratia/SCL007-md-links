@@ -74,7 +74,7 @@ const mdlink = function urlFilter(path,option){
                         //encuentra archivos url
                   let regex = new RegExp(/[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.#?&//=]*)/gi);
                   //regexp expresion regular
-                  fs.readFile('./'+fileObject,function(err,data){
+                  fs.readFile(testFolder+fileObject,function(err,data){
                     if(option ===  null || option === "" || option==="undefined"){
                       //imprimo el nombre del archivo en la ùltima posición con fileObject 
                        console.log(fileObject);
