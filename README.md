@@ -6,7 +6,7 @@ Pequeña librería que lee y analiza archivos de tipo Markdown(.md), para verifi
 
 La idea de esta librería es leer del sistema de archivos, recibir argumentos a través de la línea de comando, analizar texto, hacer consultas HTTP.
 
-##Características
+## Características
 
 - Lee solo archivos con la extensión .md
 - Extrae y lista todos los links que contenga el archivo
