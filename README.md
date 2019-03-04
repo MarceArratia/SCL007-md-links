@@ -15,8 +15,6 @@ La idea de esta librería es leer del sistema de archivos, recibir argumentos a 
 
 ![md-links](filtro.jpeg)
 
-Antes de todo: 
-Para el correcto funcionamiento de este proyecto necesitas tener instalado Node.js en tu computador. Para las pruebas unitarias se utilizó Jest por su simpleza.
 
 
  ## Pre-requisitos
@@ -34,7 +32,15 @@ Instala la librería con el siguiente comando con la terminal situada en el dire
 ~~~
 $npm install https://github.com/MarceArratia/SCL007-md-links
 ~~~
-Luego deben ingresar a la carpeta node_modules/md-links y colocar en la terminal el comando node index.js path option, donde path es la ruta del directorio o archivo y option las opciones que quieren verificar: --validate y --stats
+Luego deben ingresar a la carpeta 
+~~~
+node_modules/md-links
+~~~
+ y colocar en la terminal el comando
+ ~~~ 
+ node index.js path option
+ ~~~
+  donde path es la ruta del directorio o archivo y option las opciones que quieren verificar: --validate y --stats.
 
 
 En ambos casos, si deseas validar funcionalidad de los links contenidos en los archivos .md, sólo debes agregar un espacio, seguido del comando "--validate". El siguiente ejemplo muestra como se efecturía la operación, situándonos en la carpeta contenedora del archivo.
