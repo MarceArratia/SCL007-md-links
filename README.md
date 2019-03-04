@@ -8,10 +8,10 @@ La idea de esta librería es leer del sistema de archivos, recibir argumentos a 
 
 ##Características
 
-Lee solo archivos con la extensión .md
-Extrae y lista todos los links que contenga el archivo
-Agregando la opción --validate valida estado actual de los links encontrados
-Agregando la opción --stats la salida será un texto con estadísticas básicas sobre los links.
+- Lee solo archivos con la extensión .md
+- Extrae y lista todos los links que contenga el archivo
+- Agregando la opción --validate valida estado actual de los links encontrados
+- Agregando la opción --stats la salida será un texto con estadísticas básicas sobre los links.
 
 ![md-links](filtro.jpeg)
 
@@ -31,13 +31,14 @@ Debes tener instalado Node.js en tu computador.
 
 Instala la librería con el siguiente comando con la terminal situada en el directorio de tu proyecto
 
+~~~
 $npm install https://github.com/MarceArratia/SCL007-md-links
-
+~~~
 Luego deben ingresar a la carpeta node_modules/md-links y colocar en la terminal el comando node index.js path option, donde path es la ruta del directorio o archivo y option las opciones que quieren verificar: --validate y --stats
 
 
 En ambos casos, si deseas validar funcionalidad de los links contenidos en los archivos .md, sólo debes agregar un espacio, seguido del comando "--validate". El siguiente ejemplo muestra como se efecturía la operación, situándonos en la carpeta contenedora del archivo.
-
+~~~
 Ejemplo 1:
 
 node index.js path --validate, para validar links
@@ -45,8 +46,7 @@ node index.js path --validate, para validar links
 Ejemplo 2:
 
 node index.js path --stats, para ver estadística
-
-
+~~~
 
 ## Documentación Técnica de Librería
 
