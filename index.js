@@ -8,4 +8,11 @@ const mdlink=require('./mdlink.js');
 let urlOption=[];
 //mdlink(splitResult[0],splitResult[1]);
 urlOption=process.argv[1].split('index.js');
-mdlink(urlOption[0]+process.argv[process.argv.length-2],String(process.argv[process.argv.length-1]).substr(2));
+//console.log(process.argv);
+if(process.argv.length===3){
+  mdlink(urlOption[0]+process.argv[process.argv.length-1],"");
+}
+else{
+  mdlink(urlOption[0]+process.argv[process.argv.length-2],String(process.argv[process.argv.length-1]).substr(2));
+}
+//mdlink(urlOption[0]+process.argv[process.argv.length-2],String(process.argv[process.argv.length-1]).substr(2));

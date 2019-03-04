@@ -47,7 +47,8 @@ function checkUrl(urlCheck,option,name){
 //buscando ruta relativa y absoluta,path almacena la ruta que ingresa el usuario
 const mdlink = function urlFilter(path,option){
     //testFolder guarda la ruta de la carpeta o el archivo ,trim quita espacios antes o despuès de la url 
-    const testFolder =String(path).trim();//'/Users/miguel/Desktop/Trabajos Marce/Prueba/readme.md';
+    const testFolder = String(path).trim();//'/Users/miguel/Desktop/Trabajos Marce/Prueba/readme.md';
+    console.log(testFolder);
   if(String(testFolder).indexOf(".md") !== -1){//pregunta si testFolder es un archivo
               //encuentra archivos url
         let regex = new RegExp(/[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.#?&//=]*)/gi);
